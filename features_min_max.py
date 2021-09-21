@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-from constants import headers, SELF, TOKENS_LEN, IMPRESSION
+from constants import headers, SELF, TOKENS_LEN, IMPRESSION, DATA_PATH
 import joblib
 import shelve
 
