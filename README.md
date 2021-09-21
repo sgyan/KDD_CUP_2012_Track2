@@ -48,3 +48,7 @@ Modified the deepfm which is implemented by Weichen Shen,wcshen1994@163.com in D
 (3) The value of dense feature with large number is being log() before being normalized to one: did not improve the auc.
 
 (4) The way that may be improve auc is: make the feature selection a little more detailed.
+
+
+## Dependency
+pip install joblib

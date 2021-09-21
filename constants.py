@@ -1,9 +1,9 @@
 # -*- coding:utf-8 -*-
 
-DIR_PATH = '/home/zhoudongliang/kddcup2012-track2/origin-data/track2/'
+DIR_PATH = 'D:\\WWW_Paper_PublicData\\kddcup2012-track2\\track2\\'
 DATA_PATH = 'data/'
 DATA_TRAINING = DIR_PATH + 'training.txt'
-DATA_TEST = DIR_PATH + 'training.txt'
+DATA_TEST = DIR_PATH + 'test.txt'
 NUM_TRAINING = 149639105
 NUM_TEST = 20297594
 
