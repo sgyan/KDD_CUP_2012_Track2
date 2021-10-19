@@ -30,7 +30,7 @@ seed = 1024
 # Dropout在数据量本来就很稀疏的情况下尽量不用，不同的数据集dropout表现差距比较大
 
 embedding_size = 8  # embedding cost most of the memory, if OOM, reduce this
-hidden_size = [512, 256, 256, 256, 128]
+hidden_size = [600,3]
 lr = 0.0005
 batch_size = 18000
 l2_reg_linear = 0.000001
@@ -319,9 +319,9 @@ if __name__ == "__main__":
         fr.close()
 
     # 4.Define Model,compile and train
-    # model = DeepFM({"sparse": sparse_feature_dim, "dense": dense_features}, embedding_size=embedding_size,
-    #                hidden_size=hidden_size,
-    #                final_activation='sigmoid')
+    model = DeepFM({"sparse": sparse_feature_dim, "dense": dense_features}, embedding_size=embedding_size,
+                   hidden_size=hidden_size,
+                   final_activation='sigmoid')
 
     model = MDFM({"sparse": sparse_feature_dim, "dense": dense_features_complete,
                   'multi_val': multi_val_features_dim},
